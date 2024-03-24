@@ -2,6 +2,7 @@ import axios from 'axios';
 import { authHeader } from './auth-header';
 // Add a HTTP header with the help of authHeader() function 
 // when requesting authorized resource.
+// Obtengo datos en las diferentes urls. Están almacenados en el localStorage
 const API_URL = "https://localhos/8080/api/test";
 const getPublicContent = () => {
     return axios.get(API_URL + "all")
